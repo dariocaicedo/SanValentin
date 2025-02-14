@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>San Valentin</title>
+	<link rel="stylesheet" href="styles.css">
+	
+	<script>
+		let nombre = "";
+		nombre = prompt("Ingrese su nombre: ");
+		if (nombre) {
+			alert("¡Bienvenida " + nombre + "!");
+		} else {
+			alert("¡Bienvenida!"); // Si no ingresan nombre, un mensaje genérico.
+			nombre = " "; // Nombre por defecto
+		}
+		
+		window.onload = function() {
+			// Añadir el nombre al contenido del contenedor
+			document.getElementById("nombre").textContent = nombre;
+		}
+	</script>
+    
+</head>
+<body>
+		<div class="container">
+			<h1>¡Feliz Día de San Valentín!</h1>
+			
+			<div class="flower-container">
+				<!-- Las flores se agregarán y eliminarán aquí mediante JavaScript -->
+				</div><p>Qué agradable...</p>	
+					<p>Qué agradable es saber que existes</p>	
+										
+					<p>Qué agradable es sentirte cerca</p>
+										
+					<p>Qué agradable es contar contigo</p>			
+									
+					<p>Qué agradabla es quererte así...</p>
+										
+					<h2>¡Te deseo un día lleno de amor y felicidad! <br><span id="nombre" ></span><br></h2><!-- Aquí aparecerá el nombre -->
+					<button class="button" onclick="redirigir()">Ingresar </button>
+					<script>
+					// Función para redirigir
+					function redirigir() {
+					  window.location.href = 'playlist.html'; // Aquí especifica la página a la que quieres redirigir
+					}
+					</script>
+				</div>				
+			</div>			
+		</div>
+	<script src="script.js"></script>
+</body>
+</html>
